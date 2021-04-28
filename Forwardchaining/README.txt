@@ -23,7 +23,7 @@ Step 2: Run pipeline.py with the following parameters:
 
 -sim: Similarity metric for comparing generated concepts to target concepts, default: cosim ("cos")
 
--emb: Path to embeddings which are used for computing similarity, default: “numberbatch-en-17.06.txt” (in the main directory). 
+-emb: Path to embeddings which are used for computing similarity, we recommend numberbatch embeddings.
 
 -hops: number of hops (any integer), default: 3 
 
