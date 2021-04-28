@@ -1,6 +1,6 @@
 Establishing Commonsense Knowledge Paths between Concepts from Sentences Via Forward Chaining
 
-This repository includes the code for applying COMET (Bosselut et al., 2019) for forward chaining, as described in our paper (Becker et al. 2021). This forward chaining procedure is part of our framework CO-NNECT, which we propose for enriching texts with commonsense knowledge in the form of high-quality single- and multi-hop knowledge paths between concepts in texts. With the following code, you can generate single- and multihop commonsense knowledge paths between concepts from two sentences, via target prediction. The code for extracting concepts from texts can be found in our CoCo-Ex repository. The code for generating direct relations between concepts from texts, using our relation classification model, can be found in our COREC-LM repository.
+This readme explains the code for applying COMET (Bosselut et al., 2019) for forward chaining, as described in our paper (Becker et al. 2021). This forward chaining procedure is part of our framework CO-NNECT, which we propose for enriching texts with commonsense knowledge in the form of high-quality single- and multi-hop knowledge paths between concepts in texts. With the following code, you can generate single- and multihop commonsense knowledge paths between concepts from two sentences, via target prediction. The code for extracting concepts from texts can be found in our CoCo-Ex repository. The code for generating direct relations between concepts from texts, using our relation classification model, can be found in the COREC-LM directory of this repository.
 
 Running the code requires the following software components:
 
@@ -11,7 +11,7 @@ Running the code requires the following software components:
 - pandas 1.2
 - stanford parser 3.9.2
 
-Step 1: Extract concepts from a given pair of sentences using CoCo-Ex
+Step 1: Extract concepts from a given pair of sentences using CoCo-Ex (https://github.com/Heidelberg-NLP/CoCo-Ex)
 
 Step 2: Run pipeline.py with the following parameters:
 
