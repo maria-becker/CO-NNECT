@@ -51,7 +51,7 @@ Below we give an example command for running the code, with our default paramete
 
 python pipeline.py -inputfile file.tsv -experiment_name "experiment1" -out paths/ -sim cos -emb numberbatch-en-17.06.txt -hops 3 -beams 10 -contextsimthresh 0.7 -keep all -threshold 0.95 -pos_filter -lemma_check -reverse
 
-The directories data_reverse, data_noreverse, model_reverse, model_noreverse, together with our pretrained model, can be downloaded from here: 
+The directories data_reverse, data_noreverse, model_reverse, model_noreverse, together with our pretrained model, can be downloaded from here: https://drive.google.com/file/d/1wWiu_wZ-GDXDGQt7bvtPIw_dR5Zb2XFU/view?usp=sharing
 
 If you use the code, please cite: Becker, M., Korfhage, K., Paul, D., and Frank, A. (2021). CO-NNECT: A Framework for Revealing Commonsense Knowledge Paths as Explicitations of Implicit Knowledge in Texts. IWCS – International Conference on Computational Semantics.
 
