@@ -15,7 +15,9 @@ Step 1: Extract concepts from a given pair of sentences using CoCo-Ex (https://g
 
 Step 2: Run pipeline.py with the following parameters:
 
--inputfile: tsv file with pairs of concepts, one pair per line, separated by tabs. You can generate those input pairs with our concept extraction tool CoCo-Ex,  (just use the output from CoCo-Ex as input to the model), or create your own input file.
+-inputfile: tsv file with sentences and extracted PoS-tagged concepts, one sentence per line, separated by tabs. We highly recommend to generate those input pairs with our concept extraction tool CoCo-Ex,  (just use the output from CoCo-Ex as input to this model). Alternatively, you can create your own input file. This should be formated like that: textID  tab sent1|sent2 tab sentence tab[concept1|PoS tag] [concept2|PoS tag] ...
+Sent1 and Sent2 that belong to the same text ID build one sentence pair.
+Example: text1005   sent1   a youngster plays with a toy.   [play|VP][plays|VP][youngster|NP][toy|NP]
 
 -experiment_name: The experiment_name is used to name temporary output files (but not the final outputs). If you start several forwardchaining runs in parallel, it is very important that the experiment_name is distinct for each of them.
 
@@ -48,6 +50,8 @@ In addition, at the beginning of running process a file named “forwardchaining
 Below we give an example command for running the code, with our default parameters and settings that we also used in our paper:
 
 python pipeline.py -inputfile file.tsv -experiment_name "experiment1" -out paths/ -sim cos -emb numberbatch-en-17.06.txt -hops 3 -beams 10 -contextsimthresh 0.7 -keep all -threshold 0.95 -pos_filter -lemma_check -reverse
+
+The directories data_reverse, data_noreverse, model_reverse, model_noreverse, together with our pretrained model, can be downloaded from here: 
 
 If you use the code, please cite: Becker, M., Korfhage, K., Paul, D., and Frank, A. (2021). CO-NNECT: A Framework for Revealing Commonsense Knowledge Paths as Explicitations of Implicit Knowledge in Texts. IWCS – International Conference on Computational Semantics.
 
