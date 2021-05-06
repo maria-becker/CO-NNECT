@@ -1,0 +1,13 @@
+tensorboard
+torch
+transformers
+torchvision
+scikit-learn
+seqeval
+psutil
+matplotlib
+git-python==1.0.3
+faiss
+streamlit
+elasticsearch
+pandas
