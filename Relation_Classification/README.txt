@@ -71,7 +71,7 @@ This Readme explains the code for running COREC-LM for predicting direct relatio
         --no_cuda
     
     Evaluation (in case labelled test data is available):
-    â> Make sure there are both src and trg files for test_data
+    --> Make sure there are both src and trg files for test_data
     
         python fine_tune_cnRel.py 
         --data_dir $DATA_DIR \
